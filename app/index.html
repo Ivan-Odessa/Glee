@@ -12,8 +12,8 @@
 
     <header class="header">
 
-        <div class="wrapper">
-            <div class="header-top">
+        <div class="header__wrapper">
+            <div class="header__top">
 
                 <a href="#" class="logo">
                     <img src="images/logo.png" alt="logo">
@@ -89,92 +89,118 @@
         </div>
     </header>
 
+    <main class="main">
+
+    </main>
+
     <footer class="footer">
         <div class="container">
-            <div class="footer-columns">
+            <div class="footer__columns">
 
-                <div class="footer-column">
-                    <a href="#" class="logo">
-                        <img src="images/logo.png" alt="logo">
+                <div class="footer__column">
+
+                    <a href="#" class="logo footer__logo">
+                        <img class="footer__img" src="images/logo.png" alt="logo">
                     </a>
-                    <address class="address">
-                        ADDRESS: 4772 Wines Lane
-                        Houston, TX 77032
-                        <a href="tel:+8323475843" class="phone">Telephone: +832-347-5843</a>
-                        <a href="mailto:contact@Glee.com" class="email">Email: contact@Glee.com</a>
+
+                    <address class="footer__address">
+                        <p class="footer__address-text">
+                            ADDRESS: 4772 Wines Lane
+                            Houston, TX 77032
+                        </p>
+
+                        <a href="tel:+8323475843" class="footer__phone">TELEPHONE: +832-347-5843</a>
+                        <a href="mailto:contact@Glee.com" class="footer__email">EMAIL: contact@Glee.com</a>
+
                     </address>
                 </div>
 
-                <div class="footer-column">
-                    <div class="footer-column__title">Services</div>
-                    <ul class="footer-column__list">
-                        <li class="footer-column__item">
-                            <a href="#" class="footer-column__link">About us</a>
+                <div class="footer__column">
+                    <div class="footer__title">Services</div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">About us</a>
                         </li>
 
-                        <li class="footer-column__item">
-                            <a href="#" class="footer-column__link">Return Policy</a>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Return Policy</a>
                         </li>
 
-                        <li class="footer-column__item">
-                            <a href="#" class="footer-column__link">Our Blog</a>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Our Blog</a>
                         </li>
 
-                        <li class="footer-column__item">
-                            <a href="#" class="footer-column__link">Contact Us</a>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Contact Us</a>
                         </li>
 
-                        <li class="footer-column__item">
-                            <a href="#" class="footer-column__link">Terms & Condition</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <div class="footer-column__title">Account</div>
-                    <ul class="footer-column__list">
-                        <li class="footer-column__item">
-                            <a href="#" class="footer-column__link">Your Account</a>
-                        </li>
-
-                        <li class="footer-column__item">
-                            <a href="#" class="footer-column__link">Checkout</a>
-                        </li>
-
-                        <li class="footer-column__item">
-                            <a href="#" class="footer-column__link">Login</a>
-                        </li>
-
-                        <li class="footer-column__item">
-                            <a href="#" class="footer-column__link">Register</a>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Terms & Condition</a>
                         </li>
                     </ul>
                 </div>
 
-                <div class="footer-column">
-                    <div class="footer-column__title">newsletter</div>
-                    <p class="footer-column__text">
+                <div class="footer__column">
+                    <div class="footer__title">Account</div>
+
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Your Account</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Checkout</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Login</a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Register</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="footer__column footer__column--form">
+                    <div class="footer__title">newsletter</div>
+
+                    <p class="footer__text">
                         Subscribe by our newsletter and get
                         update protidin.
                     </p>
-                    <form action="#" class="footer-column__form">
-                        <input class="footer-column__form-input" type="email" required>
-                        <button class="footer-column__form-btn" type="submit">Subscribe</button>
+
+                    <form action="#" class="footer__form">
+                        <input class="footer__form-input" type="email" placeholder="Email address" required>
+                        <button class="footer__form-btn" type="submit">Subscribe</button>
                     </form>
+
                 </div>
 
             </div>
 
             <div class="footer-bottom">
-                <p class="footer__copy">
+
+                <p class="footer-bottom__copy">
                     ©2020 CopyRight Example. All rights reserved.
                 </p>
+
                 <ul class="footer-bottom__list">
-                    <li class="footer-bottom__item">Home</li>
-                    <li class="footer-bottom__item">About</li>
-                    <li class="footer-bottom__item">Blog</li>
-                    <li class="footer-bottom__item">Contact</li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">Home</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">About</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">Blog</a>
+                    </li>
+                    <li class="footer-bottom__item">
+                        <a class="footer-bottom__link" href="#">Contact</a>
+                    </li>
                 </ul>
+
             </div>
 
         </div>
