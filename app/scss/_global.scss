@@ -7,6 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
+    font-size: 16px;
+    @extend %Rubik-400;
 }
 
 .main {
@@ -18,3 +20,9 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+
+.wrapper {
+    @extend .container;
+    max-width: 1800px;
+}
+
