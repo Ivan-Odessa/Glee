@@ -3,4 +3,9 @@ $(function () {
         arrows: false,
         dots: true
     });
-})
+}),
+
+$(function () {
+   
+    var mixer = mixitup('.products__items');
+});
