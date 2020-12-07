@@ -7,7 +7,10 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
+    font-size: 16px;
+    @extend %Rubik-400;
 }
+
 
 .main {
     flex-grow: 1;
@@ -17,4 +20,49 @@ body {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.wrapper {
+    @extend .container;
+    max-width: 1800px;
+}
+
+.title {
+    font-size: 36px;
+    @extend %DMSans-700;
+    text-align: center;
+}
+
+.btn {
+    @extend %Rubik-500;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: #243f4d;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../images/arrow-right.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 25px;
+        height: 10px;
+    }
+}
+
+.tab {
+    border: none;
+    background-color: inherit;
+    padding: 0 13px;
+    @extend %DMSans-700;
+    color: #939393;
+
+    &:hover {
+        color: #292929;
+        cursor: pointer;
+    }
 }
