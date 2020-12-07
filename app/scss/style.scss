@@ -28,7 +28,7 @@
          color: #436372;
 
          &:hover {
-            border-bottom: 1px solid #436372;
+            border-bottom: 1px solid $ocean;
          }
       }
 
@@ -38,26 +38,28 @@
       display: flex;
       align-items: center;
 
-      &__link {
+      &__btn, &__link {
          width: 50px;
          height: 50px;
          padding: 15px 15px;
          border-radius: 50%;
          text-align: center;
          position: relative;
+         cursor: pointer;
+         border: none;
+    
 
          &:not(:last-child) {
             margin-right: 20px;
          }
 
+         &--points {
+            background-color: $aqua;
+         }
+
          &--search {
             background-color: #edf1f4;
          }
-
-         &--points {
-            background-color: #a3bbc8;
-         }
-
       }
 
       &__wrapper {
@@ -143,13 +145,13 @@
       }
 
       &__button {
-         background-color: #a3bbc8;
+         background-color: $aqua;
          color: #fff;
          padding: 20px 100px 20px 28px;
          position: relative;
 
          &:hover {
-            background-color: #243f4d;
+            background-color: $ocean;
          }
 
          &::after {
@@ -198,7 +200,7 @@
 
             &.slick-active {
                button {
-                  color: #243f4d;
+                  color: $ocean;
                   background-color: #fff;
                }
             }
@@ -249,27 +251,14 @@
 
    .products {
       padding: 62px 0 185px;
+      text-align: center;
 
       &__title {
          margin-bottom: 19px;
       }
 
       &__filter {
-         text-align: center;
          margin-bottom: 77px;
-      }
-
-      &__btn {
-         border: none;
-         background-color: inherit;
-         padding: 0 14px;
-         @extend %DMSans-700;
-         color: #939393;
-
-         &:hover {
-            color: #a3bbc8;
-            cursor: pointer;
-         }
       }
 
       &__items {
@@ -346,14 +335,14 @@
 
       &__text {
          @extend %DMSans-500;
-         color: #243f4d;
+         color: $ocean;
          margin-top: auto;
          margin-bottom: 6px;
       }
 
       &__price {
          @extend %DMSans-700;
-         color: #a3bbc8;
+         color: $aqua;
       }
    }
 
@@ -419,13 +408,106 @@
       }
    }
 
+   // =========================design==============================
+
+   .design {
+      text-align: center;
+      padding: 91px 0 120px;
+
+      &__inner {
+         margin-bottom: 120px;
+      }
+
+      &__title {
+         margin-bottom: 16px;
+      }
+
+      &__filter {
+         margin-bottom: 74px;
+      }
+
+      &__items {
+         text-align: start;
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-gap: 30px;
+         grid-row-gap: 35px;
+         height: 526px;
+      }
+
+      &__video {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 500px;
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center center;
+      }
+
+   }
+
+   .design-item {
+      background-color: #f8f8f8;
+      padding: 38px 0 0 36px;
+      height: 245px;
+      overflow: hidden;
+      @extend %DMSans-700;
+      position: relative;
+
+      &__title {
+         font-size: 20px;
+         width: 200px;
+         line-height: 1.2;
+         margin-bottom: 10px;
+      }
+
+      &__subtitle {
+         color: $aqua;
+      }
+
+      &__img {
+         position: absolute;
+         right: 0;
+         object-fit: cover;
+         max-width: unset;
+
+         &--item1 {
+            top: 100px;
+            right: -77px;
+         }
+
+         &--item2 {
+            top: 100px;
+            right: -43px;
+         }
+
+         &--item3 {
+            top: 56px;
+            right: 57px;
+         }
+
+         &--item4 {
+            top: 81px;
+            right: -40px;
+         }
+
+         &--item5 {
+            top: 38px;
+            right: 31px;
+         }
+
+         &--item6 {
+            top: 106px;
+            right: -147px;
+         }
+      }
+
+   }
 
 
 
-
-
-
-   // ===================footer======================
+   // ===================footer===================================
    .footer {
       color: $gray;
       font-size: 14px;
@@ -509,7 +591,7 @@
       }
 
       &__form-btn {
-         background-color: #a3bbc8;
+         background-color: $aqua;
          color: #fff;
          cursor: pointer;
          transition: all 0.5s;

@@ -11,6 +11,7 @@ body {
     @extend %Rubik-400;
 }
 
+
 .main {
     flex-grow: 1;
 }
@@ -50,5 +51,18 @@ body {
         background-repeat: no-repeat;
         width: 25px;
         height: 10px;
+    }
+}
+
+.tab {
+    border: none;
+    background-color: inherit;
+    padding: 0 13px;
+    @extend %DMSans-700;
+    color: #939393;
+
+    &:hover {
+        color: #292929;
+        cursor: pointer;
     }
 }
