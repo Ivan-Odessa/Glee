@@ -1,0 +1,35 @@
+.support {
+
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        background-color: #fef7f0;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        flex: auto;
+        padding: 43px 0 33px;
+
+        &:not(:last-child) {
+            border-right: 1px solid #b0b0b0;
+        }
+    }
+
+    &__img {
+        padding-top: 5px;
+        margin-right: 14px;
+    }
+
+    &__title {
+        @extend %DMSans-700;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        @extend %DMSans-400;
+        margin-bottom: 13px;
+    }
+}
