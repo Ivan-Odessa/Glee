@@ -9,8 +9,18 @@ body {
     line-height: 1.5;
     font-size: 16px;
     @extend %Rubik-400;
+    background-color: #fff;
 }
 
+span {
+    display: inline-block;
+}
+
+button {
+	padding: 0;
+    border: 0;
+    cursor: pointer;
+}
 
 .main {
     flex-grow: 1;
@@ -54,15 +64,29 @@ body {
     }
 }
 
-.tab {
+.categories {
+    display: flex;
+    justify-content: center;
+}
+
+.categories-item {
     border: none;
     background-color: inherit;
-    padding: 0 13px;
+    padding: 0 15px;
     @extend %DMSans-700;
     color: #939393;
+    cursor: pointer;
+    transition: color 0.5s;
 
     &:hover {
         color: #292929;
-        cursor: pointer;
     }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    clip: rect(0 0 0 0);
 }
