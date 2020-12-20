@@ -61,30 +61,37 @@
     }
 
     &__text {
-        margin-bottom: 31px;
+        margin-bottom: 36px;
     }
 
     &__form-input,
     &__form-btn {
         @extend %DMSans-400;
-        border: none;
-        padding: 12px 15px;
+        border: none;   
     }
 
     &__form-input {
         font-size: 12px;
         background-color: #fef7f0;
         outline: inherit;
-        padding: 14px 15px;
+        padding: 10px 15px;
+        width: 100%;
+        z-index: 1;
 
         &::placeholder {
             color: #234969;
         }
     }
 
+    &__form-box {
+      display: flex;
+      justify-content: space-between;
+    }
+
     &__form-btn {
         background-color: $aqua;
         color: #fff;
+        padding: 8px 17px;
         cursor: pointer;
         transition: background-color 0.5s;
 
@@ -96,7 +103,6 @@
     &__bottom {
         display: flex;
         justify-content: space-between;
-        // margin-bottom: 35px;
     }
 
     &__bottom-list {

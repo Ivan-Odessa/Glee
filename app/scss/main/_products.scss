@@ -28,10 +28,18 @@
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    transition: all 0.5s;
 
     &:hover {
         transform: translatey(-7px);
         box-shadow: 5px 5px 5px 5px #a3bbc8;
+    }
+
+    &:hover,
+    &:focus-within {
+        .products-item__box-link {
+            transform: translateY(0);
+        }
     }
 
     &__box {
@@ -83,11 +91,7 @@
         }
     }
 
-    &:hover {
-        .products-item__box-link {
-            transform: translateY(0);
-        }
-    }
+
 
     &__title {
         @extend %DMSans-500;
