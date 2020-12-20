@@ -1,0 +1,45 @@
+.conditions {
+    padding: 112px 0 105px;
+    color: $ocean;
+
+    &__subtitle {
+        @extend %Rubik-500;
+        font-size: 24px;
+        margin-bottom: 21px;
+    }
+
+    &__list {
+        list-style: none;
+        counter-reset: item;
+        line-height: 1.8;
+        margin-bottom: 58px;
+    }
+
+    &__item {
+        padding-left: 40px;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 23px;
+        }
+
+        &::before {
+            position: absolute;
+            content: '0'counter(item) '.';
+            counter-increment: item;
+            left: 7px;
+        }
+    }
+
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: 59px;
+        }
+    }
+}
+
+.articles {
+    &__top {
+        padding-top: 0;
+    }
+}

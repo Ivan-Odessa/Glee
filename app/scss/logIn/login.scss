@@ -1,0 +1,65 @@
+.modal {
+    max-width: 470px;
+    padding-top: 115px;
+    margin: 0 auto 120px;
+    color: #436372;
+    font-size: 14px;
+
+    &__label {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid #f6f6f6;
+        height: 59px;
+        padding: 0 15px;
+    }
+
+    &__btn {
+        display: block;
+        width: 100%;
+        background-color: $aqua;
+        color: #fff;
+        font-size: 18px;
+        padding: 17px 0 16px;
+        margin: 37px 0 30px;
+        @extend %Rubik-500;
+
+        &--light {
+            color: $ocean;
+            background-color: transparent;
+            border: 2px solid $aqua;
+            margin: 0;
+            padding: 15px 0;
+        }
+    }
+
+    &__box {
+        display: flex;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #f6f6f6;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        margin-left: auto;
+    }
+
+    &__text {
+        margin-bottom: 21px;
+        text-align: center;
+    }
+}
+
+.partners--login {
+    padding: 77px 0 89px;
+    background-color: #fef7f0;
+}
+
+.footer--login {
+    padding-top: 68px;
+}

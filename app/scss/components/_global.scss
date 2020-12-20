@@ -17,9 +17,10 @@ span {
 }
 
 button {
-	padding: 0;
+    padding: 0;
     border: 0;
     cursor: pointer;
+    background-color: inherit;
 }
 
 .main {
@@ -47,7 +48,7 @@ button {
     @extend %Rubik-500;
     font-size: 15px;
     position: relative;
-    transition: all 0.5s;
+    transition: background-color 0.5s;
 
     &:hover {
         background-color: #243f4d;
@@ -64,24 +65,32 @@ button {
     }
 }
 
+.products__btn,
+.design__btn {
+    &:hover {
+        color: $aqua;
+    }
+}
+
 .categories {
     display: flex;
     justify-content: center;
-}
 
-.categories-item {
-    border: none;
-    background-color: inherit;
-    padding: 0 15px;
-    @extend %DMSans-700;
-    color: #939393;
-    cursor: pointer;
-    transition: color 0.5s;
+    &__item {
+        border: none;
+        background-color: inherit;
+        padding: 0 15px;
+        @extend %DMSans-700;
+        color: #939393;
+        cursor: pointer;
+        transition: color 0.5s;
 
-    &:hover {
-        color: #292929;
+        &:hover {
+            color: #292929;
+        }
     }
 }
+
 
 .visually-hidden {
     position: absolute;
